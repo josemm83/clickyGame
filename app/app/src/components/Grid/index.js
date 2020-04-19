@@ -1,9 +1,20 @@
 import React from 'react';
 
 function Grid({children}){
-    return (<div className="container">
-        
-    </div>);
+    return (<main className="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>        
+    </main>);
 }
 
 export default Grid;

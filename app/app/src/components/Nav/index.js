@@ -5,7 +5,7 @@ function Jumbotron ({children}) {
         <nav className="navbar">
             <ul>
                 <li className="brand">
-                    <a href="">Clicky Game</a>
+                    <a href="/">Clicky Game</a>
                 </li>
                 <li>
                     Click on an image to begin!

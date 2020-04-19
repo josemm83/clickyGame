@@ -5,6 +5,7 @@ function Footer ({}){
     <footer className="footer">
         <div className="bottom">
             Clicky Game!
+            <img alt="react" src="../../images/logo192.png"></img>
         </div>
     </footer>);
 }
