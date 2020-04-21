@@ -1,20 +1,17 @@
 import React from "react";
 
-function Jumbotron ({children}) {
+function Jumbotron (props) {
     return(
         <nav className="navbar">
             <ul>
                 <li className="brand">
                     <a href="/">Clicky Game</a>
                 </li>
-                <li>
-                    Click on an image to begin!
+                <li className={props.messageType}>
+                    {props.message}
                 </li>
                 <li>
-                    "Score: "
-                    "0"
-                    " | Top Score: "
-                    "0"
+                    Score: {props.score} | Top Score: {props.scoreToBeat}
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "name": "luke",
+        "image": "assets/images/luke.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 1,
+        "name": "ben",
+        "image": "assets/images/Ben-Kenobi.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 2,
+        "name": "chewy",
+        "image": "assets/images/chewy.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 3,
+        "name": "vader",
+        "image": "assets/images/darthvader.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 4,
+        "name": "droids",
+        "image": "assets/images/droids.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 5,
+        "name": "jabba",
+        "image": "assets/images/jabba.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 6,
+        "name": "han",
+        "image": "assets/images/Hansolo.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 7,
+        "name": "jarjar",
+        "image": "assets/images/jar.jpeg",
+        "isClicked": false
+    },
+    {
+        "id": 8,
+        "name": "leia",
+        "image": "assets/images/leia.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 9,
+        "name": "rey",
+        "image": "assets/images/rey.jpg",
+        "isClicked": false
+    },
+    {
+        "id": 10,
+        "name": "yoda",
+        "image": "assets/images/yoda.png",
+        "isClicked": false
+    },
+    {
+        "id": 11,
+        "name": "stormtroopers",
+        "image": "assets/images/stormtroopers.webp",
+        "isClicked": false
+    }
+]
