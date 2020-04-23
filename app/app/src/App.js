@@ -29,7 +29,40 @@ class App extends Component {
   }
 
   incorrectChoice = () => {
-    
+    this.setState({score: 0, message: "You guessed incorrectly...TRY AGAIN!"})
+    const updateChar = this.state.character.map(char => 
+      char.isClicked === (true) ?
+      {...char, isClicked: false} :
+      char);
+    return updateChar;
+  }
+
+  randomChars = (char) =>{
+    var reset = false;
+    const characters = this.state.character.map(index => {
+      if(index.name === char){
+        if(index.onClick === false){
+          this.correctChoice();
+          return {...index, isClicked: true}
+        }
+        else{
+          reset = true;
+          return {...index, isClicked: false}
+        }
+      }
+      return index;
+    });
+    if(reset){
+      this.setState({
+        characters: this.mix(this.incorrectChoice()),
+        messageType: "incorrect"
+      })
+    }
+    else {
+      this.setState({
+        characters: this.mix(this.winnerReset(characters))
+      })
+    }
   }
 
   createChars = () => {
@@ -38,9 +71,38 @@ class App extends Component {
         photo={characters.image}
         name={characters.name}
         id = {characters.id}
-        onClick = {characters.onClick}
+        onClick = {this.randomChars}
       />
     );
+  }
+
+  winnerReset = (char) => {
+    if(this.state.score + 1 === this.state.maxScore){
+      this.setState({score: 0, topScore: 0})
+      const updatedChar = char.map(
+        index => 
+        (true) ? 
+        {...index, isClicked: false} :
+        index)
+        return updatedChar;
+    }
+    else{
+      return char;
+    }
+  }
+
+  mix = (arr) =>{
+    let randomIndex;
+    let tempVal;
+
+    for (var i = 0; i < arr.length; i++){
+      randomIndex = Math.floor(Math.random() * arr.length);
+
+      tempVal = arr[i];
+      arr[i] = arr[randomIndex];
+      arr[randomIndex] = tempVal;
+    }
+    return arr;
   }
 
   render(){

@@ -7,7 +7,7 @@ function Characters({name, photo, onClick}){
         alt = {name}
         name = {name}
         onClick = {()=> onClick(name)}
-    />
+    />;
 }
 
 export default Characters;
