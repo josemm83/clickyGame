@@ -17,11 +17,11 @@ class App extends Component {
   }
 
   correctChoice = () => {
-    if(this.state.score + 1 === this.state.maxScore){
-      this.setState({score: this.state.score +1, message:"You win!", messageType: "Correct"});
+    if(this.state.score + 1 > this.state.scoreToBeat){
+      this.setState({scoreToBeat: this.state.scoreToBeat +1});
     }
-    else if (this.state.score > this.state.scoreToBeat){
-      this.setState({scoreToBeat: this.state.scoreToBeat +1})
+    if (this.state.score + 1 === this.state.maxScore){
+      this.setState({score: this.state.score +1, message: "You win!!!", messageType: "Correct"});
     }
     else{
       this.setState({score: this.state.score + 1, message:"You guessed correctly keep it going!", messageType: "Correct"});
@@ -30,18 +30,18 @@ class App extends Component {
 
   incorrectChoice = () => {
     this.setState({score: 0, message: "You guessed incorrectly...TRY AGAIN!"})
-    const updateChar = this.state.character.map(char => 
-      char.isClicked === (true) ?
+    const updateChars = this.state.character.map(
+      char => char.isClicked === (true) ?
       {...char, isClicked: false} :
       char);
-    return updateChar;
+    return updateChars;
   }
 
   randomChars = (char) =>{
     var reset = false;
     const characters = this.state.character.map(index => {
       if(index.name === char){
-        if(index.onClick === false){
+        if(index.isClicked === false){
           this.correctChoice();
           return {...index, isClicked: true}
         }
@@ -52,16 +52,17 @@ class App extends Component {
       }
       return index;
     });
+
     if(reset){
       this.setState({
-        characters: this.mix(this.incorrectChoice()),
+        character: this.mix(this.incorrectChoice()),
         messageType: "incorrect"
-      })
+      });
     }
     else {
       this.setState({
-        characters: this.mix(this.winnerReset(characters))
-      })
+        character: this.mix(this.winnerReset(characters))
+      });
     }
   }
 
@@ -116,7 +117,9 @@ class App extends Component {
         />
 
         <Header />
-        {this.createChars()}
+        <div className="container">
+          {this.createChars()}
+        </div>
         <Footer />
       </div>
     );
