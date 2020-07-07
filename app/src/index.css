@@ -17,13 +17,13 @@ header footer nav div {
   white-space: nowrap;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: #fff;
   font-weight: 900;
 }
 
-.navbar li{
+.navbar li {
   display: inline;
   padding: 32px;
   width: 33.3%;
@@ -77,14 +77,14 @@ html {
   margin: 0 auto;
 }
 
-.footer>.bottom>img {
+.footer > .bottom > img {
   width: 20px;
   position: relative;
   top: 3px;
   left: 2px;
 }
 
-.footer{
+.footer {
   position: relative;
   background: #6956af;
   height: 100px;
@@ -111,9 +111,9 @@ img {
   background-position: 50%;
   height: 200px;
   width: 200px;
-  border:5px solid #f1f1f1;
+  border: 5px solid #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 3px 6px;
   border-color: #000000;
-  cursor: pointer; 
+  cursor: pointer;
 }

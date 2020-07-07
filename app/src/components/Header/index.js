@@ -1,0 +1,14 @@
+import React from "react";
+
+const Header = () => {
+  return (
+    <header className="header">
+      <h1>Clicky Game!</h1>
+      <h2>
+        Click on an image to earn points, but don't click on any more then once!
+      </h2>
+    </header>
+  );
+};
+
+export default Header;
