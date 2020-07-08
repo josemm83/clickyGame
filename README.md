@@ -10,7 +10,7 @@ others can try to beat it or you can try to be your top score.
 
 In order to restart the game just click on an image and everything but the top score will reset.  In order to reset the top score just refresh the page and you can start from 
 the beginning.
-Have fun and may the force be with you!
+Have fun and may the force be with you! :video_game:
 
 Here are a few screenshots from the game
 
@@ -18,6 +18,6 @@ Here are a few screenshots from the game
 
 ![Game start](https://github.com/josemm83/clickyGame/blob/master/clickgame2.jpg)
 
-App is being ran by Heroku
+* App is being ran by Heroku
 
-Programs used: Javascript, CSS, React
+* Programs used: Javascript, CSS, React
