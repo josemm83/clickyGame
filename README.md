@@ -16,5 +16,7 @@ Here are a few screenshots from the game
 
 ![Start page of game](https://github.com/josemm83/clickyGame/blob/master/clickgame.jpg)
 
+![Game start](https://github.com/josemm83/clickyGame/blob/master/clickgame2.jpg)
+
 App is being ran by Heroku
 Programs used: Javascript, CSS, React
