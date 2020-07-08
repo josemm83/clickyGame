@@ -12,6 +12,9 @@ In order to restart the game just click on an image and everything but the top s
 the beginning.
 Have fun and may the force be with you!
 
+Here are a few screenshots from the game
+
+![Start page of game](https://github.com/josemm83/clickyGame/blob/master/clickgame.jpg)
 
 App is being ran by Heroku
 Programs used: Javascript, CSS, React
